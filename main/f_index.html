@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Codemics</title>
-  <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'><link rel="stylesheet" href="f_style.css">
   <link rel="icon" type="img/png" href=""/>
 </head>
 <body>
@@ -21,18 +21,18 @@
       <span class="tooltip">Search</span>
     </li>
     <li>
-      <a href="C:\Users\samarth joshi\Desktop\project\main\index.html">
+      <a href="index.html">
         <i class='bx bx-grid-alt'></i>
         <span class="links_name">IDE</span>
       </a>
       <span class="tooltip">IDE</span>
     </li>
     <li>
-      <a href="C:\Users\samarth joshi\Desktop\project\main\chats\index.html">
+      <a href="Chat_index.html">
         <i class='bx bx-chat'></i>
         <span class="links_name">Chats</span>
       </a>
-      <span class="tooltip">Chats</span>
+      <span class="tooltip">Messages</span>
     </li>
     <li>
       <a href="#">
@@ -42,14 +42,14 @@
       <span class="tooltip">Analytics</span>
     </li>
     <li>
-      <a href="C:\Users\samarth joshi\Desktop\project\main\file\index.html">
+      <a href="#">
         <i class='bx bx-folder'></i>
         <span class="links_name">File Manager</span>
       </a>
       <span class="tooltip">Files</span>
     </li>
     <li>
-      <a href="index.html">
+      <a href="c_index.html">
         <i class='bx bx-cart-alt'></i>
         <span class="links_name">Buy Course</span>
       </a>
@@ -83,25 +83,21 @@
   </ul>
 </div>
 <section class="home-section">
-  <div class="main">
-    <div class="d1"><h1>Python</h1></div>
-    <div class="d2"><h1>Java</h1></div>
-    <div class="d3"><h1>C</h1></div>
-    <div class="d4"><h1>C++</h1></div>
-    <div class="d5"></div>
-    <div class="d6"></div>
-    <div class="d7"><h1>Full Stack</h1></div>
-    <div class="d8"><h1>Flutter</h1></div>
-    <div class="d9"><h1>JavaScript</h1></div>
-    <div class="d10"><h1>React</h1></div>
-    <div class="d11"><h1>Angular</h1></div>
-    <div class="d12"><h1>Node</h1></div>
-    
-
-</div>
+  <div class="chat-container">
+    <div class="chat-header">
+        <h2>File Manager</h2>
+    </div>
+    <div class="chat-messages" id="chat-messages">
+        <!-- Messages will be appended here dynamically -->
+    </div>
+    <div class="chat-input">
+        <input type="file" id="message-input" placeholder="upload file">
+        <button onclick="sendMessage()">upload</button>
+    </div>
+  </div>
 </section>
 <!-- partial -->
-  <script  src="./script.js"></script>
+  <script  src="f_script.js"></script>
 
 </body>
 </html>
